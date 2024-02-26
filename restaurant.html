@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rest.css">
+  <title>Restaurant Login and Signup</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWwlMjByZXN0YXVyYW50fGVufDB8fDB8fHww') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      
+    }
+  </style>
+</head>
+<body>
+  
+  
+  
+  <div class="container">
+    
+    <div class="form-container">
+      <h1>Welcome To kalyan Family Restaurant!</h1>
+      <form id="loginForm">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="button" onclick="login()">Login</button>
+      </form>
+    </div>
+
+    <div class="form-container">
+      <form id="signupForm">
+        <h2>Sign Up</h2>
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" required>
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" required>
+        <label for="cconfirmPassword">ConfirmPassword:</label>
+        <input type="confirmpassword" id="cconfirmPassword" required>
+        <button type="button" onclick="signup()">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="rest.js"></script>
+</body>
+</html>
